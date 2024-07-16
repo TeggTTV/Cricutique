@@ -1,0 +1,17 @@
+:root {
+    --color-primary: #6495ED;
+    --color-secondary: #8090BC;
+    --color-tertiary: #F7F9FF;
+    --color-quaternary: #E6F4F1;
+}
+
+html,
+body {
+	font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+    color: var(--color-quaternary);
+}
+

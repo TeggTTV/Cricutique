@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Cricutique Shoppe</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<link rel="stylesheet" href="header.css" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="welcome.css" />
+		<link rel="stylesheet" href="slideshow.css" />
+		<link rel="stylesheet" href="services.css" />
+		<link rel="stylesheet" href="wave.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="links">
+					<div class="left">
+						<div class="name-container">
+							<h2>Cricutique</h2>
+						</div>
+						<div class="center">
+							<li>
+								<a class="link" href="#">Home</a>
+								<div class="underline"></div>
+							</li>
+							<li>
+								<a class="link" href="#">About</a>
+								<div class="underline"></div>
+							</li>
+							<li>
+								<a class="link" href="#">Contact</a>
+								<div class="underline"></div>
+							</li>
+						</div>
+					</div>
+					<div class="right">
+						<li class="searchContainer">
+							<form id="searchForm" onsubmit="handleSubmit()">
+								<input
+									spellcheck="false"
+									type="text"
+									id="searchInput"
+									class="searchInput"
+								/>
+							</form>
+							<a class="search" href="#" onclick="handleSearch()">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+								>
+									<!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+									<path
+										d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+									/></svg
+							></a>
+							<div class="underline"></div>
+						</li>
+						<li>
+							<a class="shop" href="#">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 640 512"
+								>
+									<!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+									<path
+										d="M36.8 192H603.2c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0H121.7c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224V384v80c0 26.5 21.5 48 48 48H336c26.5 0 48-21.5 48-48V384 224H320V384H128V224H64zm448 0V480c0 17.7 14.3 32 32 32s32-14.3 32-32V224H512z"
+									/></svg
+							></a>
+							<div class="underline"></div>
+						</li>
+					</div>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="welcome">
+				<div
+					id="background-slideshow"
+					class="background-slideshow"
+				></div>
+				<div class="welcomeText">
+					<h1>Welcome to Cricutique Shoppe</h1>
+					<p>Your one-stop shop for all things Cricut!</p>
+					<div class="cta">
+						<a href="#" class="button">Shop Now</a>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div></div>
+			</section>
+		</main>
+
+		<!-- <footer>
+			<p>©Copyright 20524 by CricutiqueShoppe. All rights reversed.</p>
+		</footer> -->
+
+		<script src="underline-hover.js"></script>
+		<script src="slideshow.js"></script>
+		<script src="search.js"></script>
+
+		<script src="onload.js"></script>
+
+		<script type="module">
+			// Import the functions you need from the SDKs you need
+			import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js';
+			import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js';
+			// TODO: Add SDKs for Firebase products that you want to use
+			// https://firebase.google.com/docs/web/setup#available-libraries
+
+			// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			const firebaseConfig = {
+				apiKey: 'AIzaSyBWE79thVqtJabul4u_nX0Lz3zPnlvYtsA',
+				authDomain: 'cricutiqueshoppe.firebaseapp.com',
+				projectId: 'cricutiqueshoppe',
+				storageBucket: 'cricutiqueshoppe.appspot.com',
+				messagingSenderId: '705648859019',
+				appId: '1:705648859019:web:55c2f140952b122916818e',
+				measurementId: 'G-RTXF2NPL4D',
+			};
+
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+			const analytics = getAnalytics(app);
+		</script>
+	</body>
+</html>

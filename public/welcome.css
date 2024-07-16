@@ -1,0 +1,45 @@
+
+.welcome {
+	color: var(--color-tertiary);;
+	text-align: center;
+    position: relative;
+}
+
+.cta {
+    width: 20vw;
+
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	background-color: var(--color-primary);
+	color: var(--color-tertiary);
+	text-decoration: none;
+
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+}
+
+.cta:hover {
+	background-color: var(--color-secondary);
+}
+
+.cta > a {
+	text-decoration: none;
+	color: var(--color-tertiary);
+    padding: 5px;
+}
+ 
+.welcomeText {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}
