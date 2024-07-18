@@ -30,9 +30,11 @@ function handleSearch() {
 		input.classList.remove('searching');
 		input.classList.add('searched');
 		animating = true;
+		input.style.paddingLeft = "0";
 		setTimeout(() => {
 			input.style.display = 'none';
 			input.classList.remove('searched');
+			input.style.paddingLeft = '.5rem';
 			animating = false;
 		}, 400);
 	});

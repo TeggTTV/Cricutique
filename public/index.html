@@ -1,139 +1,193 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Cricutique Shoppe</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cricutique Shoppe</title>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
 
-		<link rel="stylesheet" href="header.css" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="stylesheet" href="welcome.css" />
-		<link rel="stylesheet" href="slideshow.css" />
-		<link rel="stylesheet" href="services.css" />
-		<link rel="stylesheet" href="wave.css" />
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul class="links">
-					<div class="left">
-						<div class="name-container">
-							<h2>Cricutique</h2>
-						</div>
-						<div class="center">
-							<li>
-								<a class="link" href="#">Home</a>
-								<div class="underline"></div>
-							</li>
-							<li>
-								<a class="link" href="#">About</a>
-								<div class="underline"></div>
-							</li>
-							<li>
-								<a class="link" href="#">Contact</a>
-								<div class="underline"></div>
-							</li>
-						</div>
-					</div>
-					<div class="right">
-						<li class="searchContainer">
-							<form id="searchForm" onsubmit="handleSubmit()">
-								<input
-									spellcheck="false"
-									type="text"
-									id="searchInput"
-									class="searchInput"
-								/>
-							</form>
-							<a class="search" href="#" onclick="handleSearch()">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 512 512"
-								>
-									<!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-									<path
-										d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-									/></svg
-							></a>
-							<div class="underline"></div>
-						</li>
-						<li>
-							<a class="shop" href="#">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 640 512"
-								>
-									<!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-									<path
-										d="M36.8 192H603.2c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0H121.7c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224V384v80c0 26.5 21.5 48 48 48H336c26.5 0 48-21.5 48-48V384 224H320V384H128V224H64zm448 0V480c0 17.7 14.3 32 32 32s32-14.3 32-32V224H512z"
-									/></svg
-							></a>
-							<div class="underline"></div>
-						</li>
-					</div>
-				</ul>
-			</nav>
-		</header>
+        <link rel="stylesheet" href="header.css" />
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="welcome.css" />
+        <link rel="stylesheet" href="choose.css" />
+        <link rel="stylesheet" href="slideshow.css" />
+        <link rel="stylesheet" href="services.css" />
+        <link rel="stylesheet" href="wave.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="links">
+                    <div class="left">
+                        <div class="name-container">
+                            <h2>Cricutique</h2>
+                        </div>
+                        <div class="center">
+                            <li>
+                                <a class="link" href="#">Home</a>
+                                <div class="underline"></div>
+                            </li>
+                            <li>
+                                <a class="link" href="#">About</a>
+                                <div class="underline"></div>
+                            </li>
+                            <li>
+                                <a class="link" href="#">Contact</a>
+                                <div class="underline"></div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <li class="searchContainer">
+                            <form id="searchForm" onsubmit="handleSubmit()">
+                                <input
+                                    spellcheck="false"
+                                    type="text"
+                                    id="searchInput"
+                                    class="searchInput"
+                                />
+                            </form>
+                            <a class="search" href="#" onclick="handleSearch()">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                >
+                                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                                    /></svg
+                            ></a>
+                            <div class="underline"></div>
+                        </li>
+                        <li>
+                            <a class="shop" href="#">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 512"
+                                >
+                                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M36.8 192H603.2c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0H121.7c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224V384v80c0 26.5 21.5 48 48 48H336c26.5 0 48-21.5 48-48V384 224H320V384H128V224H64zm448 0V480c0 17.7 14.3 32 32 32s32-14.3 32-32V224H512z"
+                                    /></svg
+                            ></a>
+                            <div class="underline"></div>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
 
-		<main>
-			<section class="welcome">
-				<div
-					id="background-slideshow"
-					class="background-slideshow"
-				></div>
-				<div class="welcomeText">
-					<h1>Welcome to Cricutique Shoppe</h1>
-					<p>Your one-stop shop for all things Cricut!</p>
-					<div class="cta">
-						<a href="#" class="button">Shop Now</a>
-					</div>
-				</div>
-			</section>
-			<section class="services">
-				<div></div>
-			</section>
-		</main>
+        <main>
+            <section class="welcome">
+                <div
+                    id="background-slideshow"
+                    class="background-slideshow"
+                ></div>
+                <div class="welcomeText">
+                    <h1>Welcome to Cricutique Shoppe</h1>
+                    <p>Your one-stop shop for all things Cricut!</p>
+                    <div class="cta">
+                        <a href="#" class="button">Shop Now</a>
+                    </div>
+                </div>
+                <div class="choose">
+                    <div class="selection">
+                        <h2>Clothing 👕</h2>
+                        <p>
+                            Our clothing is made with the highest quality
+                            materials and is designed to be comfortable. It's up
+                            to you to make it your own!
+                        </p>
+                    </div>
+                    <div class="selection">
+                        <h2>Travel 🗺️</h2>
+                        <p>
+                            Our travel gear is designed to be durable and
+                            reliable. Whether you're going on a long trip or
+                            just a short one, we've got you covered!
+                        </p>
+                    </div>
+                    <div class="selection">
+                        <h2>Decoration 🪴</h2>
+                        <p>
+                            Our decorations are perfect for any occasion. From
+                            birthdays to weddings, we've got you covered!
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="choose">
+                    <div class="selection">
+                        <div class="photo">
+                            <img
+                                src="data:image/jpeg;base64,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"
+                                alt="t-shirt"
+                            />
+                        </div>
+                        <div class="desc"><div class="cta">Browse Clothing</div></div>
+                    </div>
+                    <div class="selection">
+                        <div class="photo">
+                            <img
+                                src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQlkDYOBZmMXh9c6zdkzJ2BA-A4RcAko1uwIvh-0T3CPGAcRSkCCeVzph7YOCTgfaMWJ4Nj2cuQWX90RYa6vSsZ2HyT7y5WUHn10YIXSn7RlBj4VV5cFpjoeIZ-u2wVMPZhGCW1-ShBeQ&usqp=CAc"
+                                alt="tote"
+                            />
+                        </div>
+                        <div class="desc"><div class="cta">Browse Travel</div></div>
+                    </div>
+                    <div class="selection">
+                        <div class="photo">
+                            <img
+                                src="data:image/webp;base64,UklGRkQEAABXRUJQVlA4IDgEAAAQHgCdASqFAIUAPj0ai0OiIaEUy1VkIAPEtIAqP7k7MiCGCOOaY8FiB71tcwvjDqdnnkIRFK0jbIWrXjvHb866URR2Hl/0+hpeEEt11EE4d34wZh90I8+Z9YoNIw4DnBZieg7ZZ09kq0XDUZc38Dl+Zf+aT9cY/53idDKgg1OiuzT/SbsuO5xFMIGDTY3aVuePuMKSL5iblo05dIa8dQK9I5s7uGSw1PyPQMxBOicjFDxoMZmWL2pfwE+yJjgh6KgcVdC6ot5aZSNg8U9zEpZhV21Pherih5kCCYlOtWRSYWeP895rI6/d+lIBXeItMEMBAuW0iV0JgAAA/v3WgfjorGKBGl+B93BILghu7XfJKsgzeBLVNHSy6KhP0XZBR9ifU3pkfAxRhmr18C8QDqVIghgvQJBVEueHwrQeLBdzaz9GfWkxS0omLFqrgAti+HrmrXRtfqamA8g0NETauxUpt7xVZUE2pxh57bi5EpmLX366ZmsGOcx5xknQ90YehmAnK1COQwgQGKUtdwKd06G4b/Bpx7Eor7CxjGIdY1nm0go+oUPMROZjbT29px1tEsql3Zz7ExWCBYVbqoBEJwC71wQPLai+iSW2EUZ8aW0Lb4cJD+AClj0t/sf/8WHqYeHtF/f3iUsl5av8i807j7Phi44Znlpf3GfOo8UfAeo2UdxfF4EsXnLbvP1GJsFl4oeSc2T9kKHPYEQC5J4p+qDW61zhJimNA5ugcI9IkujPTEXHyW3W76RDeCZy7esxde2bDm8bGbeeUpIF5eDb43C2DLGC6fR7xz6iwdbfWvw4QnmoR3vdaCWvIxAxoj7M6uu1/QtZa7t55NN74YVYAqpxZN2S34siMkEeCtYo4HEZcttJhL8NKpgmwC1BxT20CRDvAcX7NA2rexpBa1/BIwL48oU5nQ7yXYLEs1Bcj2kmlogz6PUmeYKH8S9B8WsFsokRxafUJ5WfrcX5XdRmsJXtoyqqrprzaUj0a8dxTC+E09B14+oniH+Y4SaCWu7mZZJAkWpL0tARwvGxqYEcDKUcP4O/4k5kjOvp0+jdF2l6nGJtacoNfyBDMIuFAk6QrjtfHO0+BTxaCvScaA1INzo2agB7sZffdLxhB3Jl02hwE2Gt99/fLHPkHqBCQLamY4chUso6Lc09t2FRIG+ECceETkv0ARviO0CMx7pO5t9d1RWn+YffrT2UbSxUo9+DySU1BdvJcCyh9yzssDhS4TIrdDnPh+86S+t6TUsHjqxBfXru0O7MMa1QhrJssxyIH9/odqzIVlN0+ONaqklRoVcA7NoaqozJ2Wn0Y9l1YjOrGblsaO8fwbb8gYnSBZ9iSw9bkmtdt+QhRtBSXYA7nJbd+9bAss7ICYTL6WlqA24LYp3J/jJVvM8WQrGqwPl57G2WwyjjTxfzXDiQqbIMAAGRD2fDzOksAAA="
+                                alt="label"
+                            />
+                        </div>
+                        <div class="desc"><div class="cta">Browse Decor</div></div>
+                    </div>
+                </div> -->
+            </section>
+            <section class="services"></section>
+        </main>
 
-		<!-- <footer>
+        <!-- <footer>
 			<p>©Copyright 20524 by CricutiqueShoppe. All rights reversed.</p>
 		</footer> -->
 
-		<script src="underline-hover.js"></script>
-		<script src="slideshow.js"></script>
-		<script src="search.js"></script>
+        <script src="underline-hover.js"></script>
+        <script src="welcomeAnimation.js"></script>
+        <script src="slideshow.js"></script>
+        <script src="search.js"></script>
 
-		<script src="onload.js"></script>
+        <script src="onload.js"></script>
 
-		<script type="module">
-			// Import the functions you need from the SDKs you need
-			import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js';
-			import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js';
-			// TODO: Add SDKs for Firebase products that you want to use
-			// https://firebase.google.com/docs/web/setup#available-libraries
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
 
-			// Your web app's Firebase configuration
-			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-			const firebaseConfig = {
-				apiKey: '',
-				authDomain: 'cricutiqueshoppe.firebaseapp.com',
-				projectId: 'cricutiqueshoppe',
-				storageBucket: 'cricutiqueshoppe.appspot.com',
-				messagingSenderId: '705648859019',
-				appId: '1:705648859019:web:55c2f140952b122916818e',
-				measurementId: 'G-RTXF2NPL4D',
-			};
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "",
+                authDomain: "cricutiqueshoppe.firebaseapp.com",
+                projectId: "cricutiqueshoppe",
+                storageBucket: "cricutiqueshoppe.appspot.com",
+                messagingSenderId: "705648859019",
+                appId: "1:705648859019:web:55c2f140952b122916818e",
+                measurementId: "G-RTXF2NPL4D",
+            };
 
-			// Initialize Firebase
-			const app = initializeApp(firebaseConfig);
-			const analytics = getAnalytics(app);
-		</script>
-	</body>
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
+    </body>
 </html>

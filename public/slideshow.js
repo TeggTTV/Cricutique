@@ -1,9 +1,10 @@
 let slideshowContainer = null;
 
 let slides = [
-	'https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-	'https://images.pexels.com/photos/2781760/pexels-photo-2781760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-	'https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	'https://imgs.michaels.com/MAM/assets/1/3C806BFAE43F48829D51D9995CDC917A/img/5AA213D8DD004002B6CB0BC93179E0AD/10570203_1.jpg?fit=inside|1280:1280m',
+	// 'https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	// 'https://images.pexels.com/photos/2781760/pexels-photo-2781760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	// 'https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
 ];
 
 function initSlideShow() {

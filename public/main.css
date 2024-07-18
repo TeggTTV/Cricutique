@@ -1,15 +1,16 @@
-
 main {
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-	/* add overlay */
-	position: absolute;
-	top: 0;
-	left: 0;
+  /* add overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
 
-	display: flex;
-    flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+	box-sizing: border-box;
 }

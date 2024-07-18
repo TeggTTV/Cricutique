@@ -18,20 +18,28 @@ header {
 	right: 0;
 	margin: 1rem auto;
 	z-index: 1;
+
+	box-sizing: border-box;
 }
 
 .name-container {
 	display: flex;
 	align-items: center;
 	max-width: 200px;
-	/* margin: 0 auto; */
+	
+	margin: 0;
 	/* font-size: .75rem; */
+}
+
+.name-container h2 {
+	margin: 0;
 }
 
 .links {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 	padding: 0;
 	/* padding-right: 1rem; */
 	/* margin-right: 1rem; */
@@ -79,7 +87,7 @@ nav a {
 
 .underlined {
 	position: relative;
-	animation: grow-underline 0.5s forwards;
+	animation: grow-underline 0.25s forwards;
 }
 
 @keyframes grow-underline {
@@ -105,13 +113,18 @@ nav a {
 	justify-content: space-between;
 	gap: 0.5rem;
 }
-.shop > svg,
-.search > svg {
+
+.right svg {
 	width: 1.5rem;
 	height: 1.5rem;
 
 	fill: var(--color-tertiary);
 	z-index: 1;
+}
+
+.right svg:hover {
+	cursor: pointer;
+	transform: scale(1.05);
 }
 
 .searchContainer {
@@ -124,6 +137,7 @@ nav a {
 
 .left {
 	display: flex;
+	align-items: center;
 }
 
 .searchInput {

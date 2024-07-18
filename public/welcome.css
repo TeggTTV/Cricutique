@@ -1,20 +1,27 @@
-
 .welcome {
-	color: var(--color-tertiary);;
-	text-align: center;
+    width: 100%;
+    color: var(--color-tertiary);
+    text-align: center;
     position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .cta {
     width: 20vw;
-
-	margin-top: 1rem;
-	padding: 0.5rem 1rem;
-	border-radius: 5px;
-	background-color: var(--color-primary);
-	color: var(--color-tertiary);
-	text-decoration: none;
-
+    max-width: 200px;
+    min-width: 100px;
+    
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    text-decoration: none;
+    
     position: relative;
     left: 0;
     right: 0;
@@ -22,24 +29,53 @@
 }
 
 .cta:hover {
-	background-color: var(--color-secondary);
+    background-color: var(--color-hover);
+    cursor: pointer;
 }
 
 .cta > a {
-	text-decoration: none;
-	color: var(--color-tertiary);
+    text-decoration: none;
+    color: var(--color-tertiary);
     padding: 5px;
 }
- 
-.welcomeText {
-    height: 100vh;
 
+.welcomeText {
+    height: max-content;
+    width: 50vw;
+    
+    /* transform: translateX(-100vh); */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* filter: blur(20px); */
+    /* transition: all 1s; */
+}
 
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
+.moveOutOfTheWay {
+    /* transform: translateX(-25vw); */
+    animation: slideAway .75s forwards;
+}
+
+@keyframes slideAway {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-25vw);
+    }
+}
+
+.welcomeText > h1,
+.welcomeText > p,
+.welcomeText > div {
+    transition: all 0.5s;
+    filter: blur(2px);
+    opacity: 0;
 }
