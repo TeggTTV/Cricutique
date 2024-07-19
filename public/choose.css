@@ -18,19 +18,19 @@
    */
 }
 
-.choose > .selection {
+.selection {
     width: 90%;
     height: 100%;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     position: relative;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     margin: 20px;
     padding: 10px;
@@ -60,10 +60,11 @@
 
 .selection > * {
     text-align: left;
+    /* width: 100%; */
 }
 
 .selection h2 {
-    width: 100%;
+    /* width: 100%; */
     margin: 0;
 }
 
@@ -94,3 +95,18 @@
 
   padding: 10px;
 } */
+
+.typeSelect {
+  width: max-content;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  padding: 10px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
